@@ -1,0 +1,31 @@
+html, 
+body{
+    height: 100%;
+    background: linear-gradient(60deg, rgba(28,0,31,1) 0%, rgba(40,0,45,1) 15%, rgba(12,2,14,1) 85%, rgba(13,3,54,1) 100%);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ul {
+	list-style: none; /* Remove default bullets */
+  }
+  
+  ul li::before {
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: whitesmoke; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+  }
